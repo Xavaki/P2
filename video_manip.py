@@ -180,5 +180,9 @@ if __name__ == "__main__":
             exit()
 
     else:
-        print("Please specify correct input")
+        print("Please call any of the following functions")
+        print("··· n_seconds")
+        print("··· yuv_histogram")
+        print("··· resize_video")
+        print("··· audio_manip")
         exit()
