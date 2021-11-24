@@ -164,25 +164,25 @@ if __name__ == "__main__":
     elif len(sys.argv) == 2:
         function = sys.argv[1]
         if function == "n_seconds":
-            print(f'Running {function}')
+            print(f'Running {function}...')
             n_seconds()
-        elif function == "yuv_histogram":
-            print(f'Running {function}')
-            yuv_histogram()
-        elif function == "resize_video":
-            print(f'Running {function}')
-            resize_video()
-        elif function == "audio_manip":
-            print(f'Running {function}')
-            audio_manip()
-        else:
-            print("Function not in allowed list, please specify correct input")
             exit()
-
-    else:
-        print("Please call any of the following functions")
-        print("··· n_seconds")
-        print("··· yuv_histogram")
-        print("··· resize_video")
-        print("··· audio_manip")
-        exit()
+        elif function == "yuv_histogram":
+            print(f'Running {function}...')
+            yuv_histogram()
+            exit()
+        elif function == "resize_video":
+            print(f'Running {function}...')
+            resize_video()
+            exit()
+        elif function == "audio_manip":
+            print(f'Running {function}...')
+            audio_manip()
+            exit()
+    
+    print("Please call any of the following functions")
+    print("··· n_seconds")
+    print("··· yuv_histogram")
+    print("··· resize_video")
+    print("··· audio_manip")
+    exit()
